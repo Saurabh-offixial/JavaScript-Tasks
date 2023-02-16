@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+    <h3>JavaScript is mainly implementing Logic</h3>
+    <p>JavaScript has many topics</p>
+        <ul id="demo" style="display: none;">
+            <li>Button Effects</li>
+            <li>Font-Resizing</li>            
+        </ul>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Click </button> <hr>
+
+    <h4>2 types of Display Effect will be Used</h4>
+    <p>1) Display None</p>
+    <p>JavaScript can hide HTML elements using Display None.</p>
+    <p id="demo1">Hello Bro😀</p>
+    <button type="button" onclick="document.getElementById('demo1').style.display='none'">Click Me!</button>  <br> <br>
+    
+    <p>2) Display Block</p>
+    <p>It is used to show the hidden ements in JavaScript.</p>
+    <p id="demo2" style="display: none;">This is hidden word.</p>
+    <button type="button" onclick="document.getElementById('demo2').style.display='block'">Click Me!</button> <hr>
+
+    <h3>Date And Time</h3>
+    <p>This will show Date & Time.</p>
+    <p id="demo3"></p>
+    <button type="button" onclick="document.getElementById('demo3').innerHTML=Date()">Click</button> <hr>
+    
+    <h3>Font-Sizing</h3>
+    <p id="demo4">JavaScript is Programming Language which is easy to learn.</p>
+    <button type="button" onclick="document.getElementById('demo4').style.fontSize='35px'">Click</button> <hr>
+
+    <h4>Button Effect to change photo or gif</h4>
+    
+    <button type="button" onclick="document.getElementById('ab').src='sunrise.gif'">Start</button>
+    
+    <img id="ab" src="sunset.jpg" style="width: 25%; height: 20%;">
+
+    <button type="button" onclick="document.getElementById('ab').src='sunset.jpg'">Stop</button>
+    
+    <script>
+        alert("IF YOU ARE HUMAN SO CLICK OK");
+    </script>
+</html>

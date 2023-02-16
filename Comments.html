@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comments</title>
+    </head>
+                                       <body>
+    <h1 id="demo1"></h1>
+    <p id="demo2"></p>
+
+    <script>
+    // Change heading:
+    document.getElementById("demo1").innerHTML = "JavaScript Comments";
+    // Change paragraph:
+    document.getElementById("demo2").innerHTML = "First Para.";
+    </script> <hr>
+
+    <!-- Single-line Comments -->
+    <h1>Single-line Comments</h1>
+
+    <p id="demo3"></p>
+
+    <script>
+    let a = 20;      // Declare a, give it the value of 20
+    let b = a - 3;  // Declare b, give it the value of a - 3 
+
+    // Write b to demo3:
+    document.getElementById("demo3").innerHTML = b;
+    </script> <hr>
+
+    <!-- Multi-line Comments -->
+    <h1>Multi-line Comments</h1>
+    <h1 id="abc"></h1>
+
+    <p id="def"></p>
+
+    <script>
+    /*
+    document.getElementById("abc").innerHTML = "Welcome to my this page";
+    document.getElementById("def").innerHTML = "This is paragraph.";
+    */
+    document.getElementById("def").innerHTML = "The comment-block is not execute.";
+    </script>
+
+</body>
+</html> 
