@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops In</title>
+</head>
+<body>
+    
+    <h2>JavaScript For In Loop</h2>
+    
+    <p id="demo"></p>
+
+    <script>
+    const person = {fname:"Diya", lname:"Dodiya", age:18}; 
+
+    let txt = "";
+    for (let x in person) {
+    txt += person[x] + " " + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = txt;
+    </script> <hr>
+
+    <p id="demo2"></p>
+
+    <script>
+    const numbers = [53,69,75,84,91];
+
+    let txt2 = "";
+    for (let x in numbers) {
+    txt2 += numbers[x] + "<br>"; 
+    }
+
+    document.getElementById("demo2").innerHTML = txt2;
+    </script> <hr>
+    
+    <h2>JavaScript Array.forEach()</h2>
+
+    <p id="demo3"></p>
+
+    <script>
+    const num = [45, 4, 9, 16, 25];
+
+    let txt3 = "";
+    num.forEach(myFunction);
+    document.getElementById("demo3").innerHTML = txt3;
+
+    function myFunction(value, index, array) {
+    txt3 += value + "<br>"; 
+    }
+    </script> <hr>
+
+    <p id="demo4"></p
+        >
+    <script>
+    const number = ["S","A","U","R","A","B","H"];
+
+    let txt4 = "";
+    number.forEach(myFunction);
+    document.getElementById("demo4").innerHTML = txt4;
+
+    function myFunction(index) {
+    txt4 += index + "<br>"; 
+    }
+    </script>
+
+
+
+
+
+</body>
+</html>

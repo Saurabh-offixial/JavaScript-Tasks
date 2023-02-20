@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loops In Js</title>
+    </head>
+<body>
+
+    <h2>JavaScript For Loop</h2>
+
+    <p id="demo"></p>
+
+    <script>
+    const person = ["Jay", "Param", "Meet", "Yash", "Het", "Avsaf"];
+
+    let text = "";
+    for (let i = 0; i < person.length; i++) {
+        text += person[i] + "<br>";
+        }
+
+    document.getElementById("demo").innerHTML = text;
+    </script> <hr>
+
+    <p id="demo1"></p>
+
+    <script>
+    let txt ="";
+
+    for (let i = 0; i < 9; i++) {
+    txt += "The number is " + i + "<br>";
+    }
+
+    document.getElementById("demo1").innerHTML = txt;
+    </script> <hr>
+
+    <!-- Expression 1 -->
+    <h1>Expression 1</h1>
+    <p id="demo3"></p>
+
+    <script>
+    let txt2 = "";
+
+    for (let i = 0; i < 5; i++) {
+    txt2 += "The number is " + i + "<br>";
+    }
+
+    document.getElementById("demo3").innerHTML = txt2;
+    </script>
+
+    <p id="demo4"></p>
+
+    <script>
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    let i = 0;
+    let len = cars.length;
+    let txt3 = "";
+
+    for (; i < len; i++) {
+    txt3 += cars[i] + "<br>";
+    }
+
+    document.getElementById("demo4").innerHTML = txt3;
+    </script> <hr>
+
+    <h1>Expression 3</h1>
+    
+    <p id="demo5"></p>
+    
+    <script>
+        const car = ["BMW", "Volvo", "Saab", "Ford"];
+        
+        let x = 0;
+        let length = car.length;
+        let txt5 = "";
+        
+        for (; x < length; ) {
+          txt5 += car[x] + "<br>";
+          x++;
+        }
+        document.getElementById("demo5").innerHTML = txt5;
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops For Of</title>
+</head>
+<body>
+    <h2>JavaScript For Of Loop</h2>
+    
+    <p id="demo"></p>
+
+    <script>
+    const cars = ["Supra", "GTR", "McLaren"];
+
+    let text = "";
+    for (let x of cars) {
+    text += x + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = text;
+    </script> <hr>
+
+    <p id="demo2"></p>
+
+    <script>
+    let person = "Diya";
+
+    let text2 = "";
+    for (let x of person) {
+    text2 += x + "<br>";
+    }
+
+    document.getElementById("demo2").innerHTML = text2;
+    </script>
+
+
+</body>
+</html>
